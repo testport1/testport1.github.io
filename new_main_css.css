@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    border: 0;
+}
+.container{
+    font-size: 0;
+    font-family: Helvetica;
+}
+.heading li{
+    display: inline;
+}
+.heading:hover{
+    cursor: pointer;
+}
+#about{
+    font-size: 50px;
+}
+#about:hover{
+    border-bottom: 2px black solid;
+    transition-duration: 0.2s;
+}
+.heading:hover ~ .heading-desc{
+    color: black;
+    font-size: 1.4rem;
+    transition-duration: 0.5s;
+    margin-left: 30px;
+}
+.heading-desc{
+    color: transparent;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    transition-duration: 0.5s;
+}
+.wrapper{
+    position: relative;
+    width: 24.8%;
+    min-height: 250px;
+    margin: 50px 0 0 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+.image img{
+    width: 90%;
+    margin: 0 5%;
+    padding:0;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background-color: grey;
+    opacity: 0.7;
+    overflow: hidden;
+    width: 90%;
+    height: 0;
+    transition: .5s ease;
+    margin: 0 5%;
+}
+.wrapper:hover{
+    cursor: pointer;
+}
+.wrapper:hover .overlay {
+    height: 100%;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+}
+#painting, #cover{
+    vertical-align: top;
+}
+#tower{
+    margin-top: -50px;
+    width: 50%;
+    horiz-align: center;
+    vertical-align: top;
+}
+#lower1{
+    margin-left: 25%;
+}
+#lower1, #lower2{
+    margin-top: -200px;
+}
+.footer{
+    text-align: center;
+    padding: 50px;
+}
+.footer li{
+    display: inline;
+}
+.Email{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: url("Email_outline.png") no-repeat;
+    background-size: cover;
+}
+.Email:hover{
+    cursor: pointer;
+    background: url("Email_filled.png") no-repeat;
+    background-size: cover;
+    size: 50px 50px;
+}
